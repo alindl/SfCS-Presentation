@@ -1,7 +1,20 @@
+[font_size]
+22
 [notes]
-### 3
-Intersection of architecture and interaction design
 ### 4
-Adaptable architecture and feedback loops
+\# Intersection of architecture and interaction design
+- Elements added to architecture (Screens)
+- Elements that are a crucial part of the architecture (Media Facades)
+- Not enough communication between architects and interaction designers
 ### 5
-Improving communication between humans and buildings
+\# Adaptable architecture and feedback loops
+- Architecture that is adaptable to occupants needs
+- Skateboarding and parkour as example
+- Buildings that have moveable walls, change translusency, etc.
+- Feedback loop between humans and building
+    - Expression of human -> reaction of building ->>>
+### 6
+\# Improving communication between humans and buildings
+- Use communication channels other than a (touch)screen and buttons
+- Ambient display -> light, sound, air flow, physical motion
+- Better separate background and foreground information

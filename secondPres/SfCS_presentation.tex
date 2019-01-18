@@ -20,6 +20,10 @@
 \usepackage{hyperref}
 \usepackage{animate}
 \renewcommand*{\bibfont}{\scriptsize}
+\usepackage[absolute,overlay]{textpos}
+
+\setbeamercolor{framesource}{fg=gray}
+\setbeamerfont{framesource}{size=\tiny}
 %\usepackage{caption}
 %\captionsetup[figure]{labelformat=empty}% redefines the caption setup of the figures environment in the beamer class.
 
@@ -28,6 +32,11 @@
 \date{}
 \usebackgroundtemplate
 
+\newcommand{\source}[1]{\begin{textblock*}{4cm}(8.7cm,8.6cm)
+    \begin{beamercolorbox}[ht=0.5cm,right]{framesource}
+        \usebeamerfont{framesource}\usebeamercolor[fg]{framesource} Source: {#1}
+    \end{beamercolorbox}
+\end{textblock*}}
 \begin{document}
 
 \begin{frame}
@@ -43,7 +52,14 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Short summary of theme}
-
+{
+    \usebackgroundtemplate{\includegraphics[width=\paperwidth,height=\paperheight]{ars.jpg}}
+\begin{frame}{Short summary of theme}
+%    \includegraphics[width=\paperwidth,height=\paperheight]{interarch.jpg}%
+%	\begin{block}{Intersection of architecture and interaction design}
+\source{CC BY-SA 3.0 Walter Isack}
+\end{frame}
+}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -57,9 +73,10 @@
 
 {
     \usebackgroundtemplate{\includegraphics[width=\paperwidth]{interarch.jpg}}
-\begin{frame}{Intersection of architecture and interaction design}
+\begin{frame}{Intersection of interaction design and architecture}
 %    \includegraphics[width=\paperwidth,height=\paperheight]{interarch.jpg}%
 %	\begin{block}{Intersection of architecture and interaction design}
+\source{CC BY-NC 2.0 Kai T. Dragland \\ Pixabay License Michael Gaida}
 \end{frame}
 }
 
@@ -70,6 +87,7 @@
 \begin{frame}{Adaptable architecture and feedback loops}
 %    \includegraphics[width=\paperwidth,height=\paperheight]{interarch.jpg}%
 %	\begin{block}{Intersection of architecture and interaction design}
+    \source{\href{https://www.theexobuilding.com/}{The Exo Building Website}}
 \end{frame}
 }
 
@@ -80,6 +98,7 @@
 \begin{frame}{Improving communication between humans and buildings}
 %    \includegraphics[width=\paperwidth,height=\paperheight]{interarch.jpg}%
 %	\begin{block}{Intersection of architecture and interaction design}
+    \source{\href{https://www.maxpixel.net/Technology-Multimedia-House-Smart-Home-Smartphone-3653454}{CC0 1.0 Max Pixel}}
 \end{frame}
 }
 
